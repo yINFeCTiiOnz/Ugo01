@@ -1,9 +1,12 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, TouchableOpacity, Text} from 'react-native';
 
-const Settings = () => {
+const Settings = ({navigation}) => {
   return (
     <View>
+      <TouchableOpacity onPress={() => navigation.openDrawer()}>
+        <Text>Mudar de pagina</Text>
+      </TouchableOpacity>
       <Text>Settings</Text>
     </View>
   );
